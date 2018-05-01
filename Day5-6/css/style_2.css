@@ -1,0 +1,38 @@
+#left {
+    background-color: #65a5fa;
+    float: left;
+    width: 200px;
+    height: 780px;
+}
+
+#right {
+    margin-left: 230px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    color: white;
+}
+
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    float: left;
+    list-style-type: none;
+    margin-right: 25px;
+    margin-bottom: 16px;
+}
+
+.contact,
+.ability {
+    clear: both;
+}
+
+p {
+    margin-top: -16px;
+}
