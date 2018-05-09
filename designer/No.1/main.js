@@ -1,6 +1,6 @@
 var el = document.getElementById("target");
-var btn = document.getElementById("btn");
+var btn = document.getElementById("myBtn");
 
-btn.onclick = function() {
+btn.onclick = function () {
     el.classList.toggle("underline");
 }

@@ -1,6 +1,34 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 .btn-wrapper {
     text-align: center;
 }
+p {
+    display: inline-block;
+    transition: color .5s cubic-bezier(0.4,0,1,1);
+}
+p::after {
+    content: "";
+    height: 2px;
+    display: block;
+    background: #2263f0;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.4,0,1,1);
+    -webkit-transition: transform .3s cubic-bezier(0.4,0,1,1);
+    -moz-transition: transform .3s cubic-bezier(0.4, 0, 1, 1);
+    -o-transition: transform .3s cubic-bezier(0.4, 0, 1, 1);
+}
+p.underline {
+    color: #2263f0;
+}
+p.underline::after {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+} 
