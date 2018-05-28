@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1030px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* box1 */
+
+header {
+    overflow: hidden;
+    position: relative;
+    background: url("./assets/bg-1.png") no-repeat;
+    height: 0;
+    padding-top: 61.875%;
+    background-size: contain;
+    color: #fff;
+}
+
+h1 {
+    font-size: 62px;
+}
+
+p.text {
+    margin-top: 80px;
+    padding: 0 120px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+p.form-text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+header .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    padding: 0 100px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    border-radius: 6px;
+}
+
+p.form-title {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.form-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-main>* {
+    border-radius: 6px;
+    line-height: 50px;
+}
+
+input.email,
+input.password {
+    width: 292px;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    font-size: 14px;
+    background: none;
+    text-align: left;
+    color: #fff;
+}
+
+.form-main .btn {
+    width: 125px;
+    height: 50px;
+    font-size: 12px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    cursor: pointer;
+}
+
+.form-main .btn:hover {
+    background: #fff;
+    color: black;
+}
+
+/* box2 */
+
+.box2 {
+    height: 710px;
+}
+
+h2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+p.box2-text {
+    margin: 0 100px;
+    font-size: 42px;
+}
+
+.items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.items {
+    width: 430px;
+    height: 140px;
+}
+
+.items img {
+    float: left;
+}
+
+.items>div {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.items p {
+    font-size: 16px;
+    color: rgab(0, 0, 0, 0.6);
+}
+
+.items h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+/* box3 */
+
+.box3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box3-bg {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-top: 50%;
+    background: url("assets/bg-2.png") no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+
+.box3 .content {
+    width: 420px;
+    text-align: left;
+}
+
+p.box3-title {
+    margin-bottom: 40px;
+    font-size: 42px;
+}
+
+p.box3-text {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-wrapper .btn {
+    float: left;
+    width: 240px;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    font-size: 12px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.btn-wrapper .btn:hover {
+    background: #fff;
+    color: black;
+}
+
+.btn-wrapper .btn:nth-child(2) {
+    margin-left: 30px;
+}
+
+.ipad {
+    position: absolute;
+    background: url("assets/pad.png") no-repeat;
+    width: 705px;
+    height: 600px;
+    top: 50%;
+    right: -110px;
+    background-origin: content-box;
+    margin-top: -300px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    border-radius: 40px;
+    padding: 29px 60px;
+}
+
+.ipad .home-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    margin-left: -30px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    border-radius: 50%;
+}
+
+/* box4 */
+
+.box4 {
+    height: 580px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+}
+
+p.box4-title {
+    font-size: 42px;
+    margin-bottom: 90px;
+}
+
+.box4 .content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.box4 .content>div {
+    width: 278px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.box4 img {
+    margin-bottom: 35px;
+}
+
+/* box5 */
+
+.box5 {
+    height: 1000px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+}
+
+.box5 .container>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box5 .container > div:first-child {
+    margin-bottom: 80px;
+}
+.box5 .content {
+    width: 330px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+p.box5-title {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+p.box5-text {
+    font-size: 16px;
+}
+/* box6 */
+.box6 {
+    height: 1084px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.4);
+}
+p.box6-title {
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+p.box6-text {
+    font-size: 18px;
+    margin: 0 110px 60px;
+}
+.box6 .person {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 710px;
+    cursor: pointer;
+}
+.box6 .img-wrapper {
+    position: relative;
+    height: 340px;
+    width: 470px;
+}
+.box6 .img-wrapper:hover .hover-content {
+    opacity: 1;
+}
+.box6 .hover-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(78, 78, 78, 0.8);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    -webkit-transition: opacity 0.8s ease;
+    -moz-transition: opacity 0.8s ease;
+    -o-transition: opacity 0.8s ease; 
+}
+.box6 .hover-content > div:nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff
+}
+.box6 .hover-content > div:nth-child(2) {
+    font-size: 12px;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.box6 .icon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    margin: 0 auto;
+}
+.box6 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    border-radius: 50px;
+}
+.box6 .icon:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+/* box7 */
+.box7 {
+    height: 700px;
+}
+.box7 .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.box7 .form {
+    width: 470px;
+    height: 560px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    border-radius: 10px;
+}
+.box7 .form > *:not(:first-child ){
+    margin: 30px auto 0;
+    border-radius: 3px;
+}
+.box7 p.form-title {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.box7 input {
+    width: 370px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+}
+.box7 textarea {
+    width: 370px;
+    height: 144px;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+}
+.box7 .btn {
+    width: 370px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 50px;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}
+.box7 .detail {
+    width: 370px;
+    text-align: left;
+} 
+p.detail-title {
+    font-size: 42px;
+    margin-bottom: 40px
+}
+p.detail-content {
+    font-size: 16px;
+    margin-bottom: 70px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.detail img {
+    float: left;
+}
+.detail .wrapper {
+    margin-top: 35px;
+}
+.detail .wrapper div {
+    margin-left: 40px;
+    font-weight: bold;
+}
+/* .box8 */
+footer {
+    height: 440px;
+    background: black;
+}
+footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    height: 410px;
+    text-align: left;
+    padding: 0;
+}
+footer .container > div {
+    height: 200px;
+}
+footer .container > div > div:nth-of-type(1) {
+    margin-bottom: 35px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+footer .container > div > div:not(:nth-of-type(1)) {
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0.3);
+}
+footer .icon img {
+    margin-right: 20px;
+    cursor: pointer;
+}
