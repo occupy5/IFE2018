@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+
+<body>
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn" onclick="add()">加</button>
+    <button id="minus-btn" onclick="min()">减</button>
+    <button id="times-btn" onclick="tim()">乘</button>
+    <button id="divide-btn" onclick="div()">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        var firstNumber = document.getElementById("first-number");
+        var secondNumber = document.getElementById("second-number");
+        var result = document.getElementById("result");
+
+        function add() {
+            result.innerHTML = parseFloat(firstNumber.value) + parseFloat(secondNumber.value);
+        }
+
+        function min() {
+            result.innerHTML = parseFloat(firstNumber.value) - parseFloat(secondNumber.value);
+        }
+
+        function tim() {
+            result.innerHTML = parseFloat(firstNumber.value) * parseFloat(secondNumber.value);
+        }
+
+        function div() {
+            try {
+                result.innerHTML = parseFloat(firstNumber.value) / parseFloat(secondNumber.value);
+                if (parseFloat(secondNumber.value) === 0) {
+                    throw "divider must not be 0!"
+                }
+            } catch (err) {
+                console.log(err);
+            }
+        }
+    </script>
+</body>
+
+</html>
