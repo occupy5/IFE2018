@@ -1,0 +1,71 @@
+body {
+    background-color: #d69a44
+}
+.face {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    left: 50%;
+    top: 40px;
+    margin-left: -175px;
+    border-radius: 50% 50% 30% 30%;
+    border: 2px solid #3f200b;
+    z-index: 5;
+    background: #fff;
+    overflow: hidden; 
+}
+.hair {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: 50px;
+    border-radius: 50% 50% 50% 50%;
+    background: #f3b32e;
+}
+.eye-wrap {
+    position: absolute;
+    width: 280px;
+    height: 70px;
+    top: 90px;
+    left: 50%;
+    margin-left: -140px;
+    overflow: hidden;
+}
+.eye-left, .eye-right {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.eye-circle {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    border: 2px solid #482507;
+    border-radius: 50% 50% 40% 40%;
+    background: #fff;
+    overflow: hidden;
+}
+.eye-core {
+    position: absolute;
+    width: 46px;
+    height: 55px;
+    left: 50%;
+    background: #000;
+    border-radius: 50% 50%;
+    margin-left: -23px;
+}
+.eye-bottom {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #482507;
+    border-radius: 40% 50%;
+    margin-top: 48px;
+    background: #fff;
+}
+.eye-right {
+    left: auto;
+    right: 0;
+}
